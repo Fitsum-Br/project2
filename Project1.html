@@ -285,7 +285,7 @@
              </a>
         
           </div>
-         </div>
+         <div>
          <br>
          <!-- Image -->
          <img src="Illustration-header@2x.png" alt="illustration" class="hero-img">
@@ -443,43 +443,94 @@
   
     <!-- Footer -->
     <footer></footer>
-    <!-- Project Info Modal -->
-  <div class="modal" style="display: block; background-color: white; padding: 2rem; border-radius: 10px; max-width: 80%; margin: 2rem auto; box-shadow: 0 5px 15px rgba(0,0,0,0.3); font-family: sans-serif;">
-    <button style="float: right; background: none; border: none; font-size: 1.5rem; cursor: pointer;">&times;</button>
-    <h2 style="color: #1b2c53;">Keeping track of hundreds of components website</h2>
-    <div style="margin: 1rem 0;">
-      <span style="border: 1px solid #ccc; padding: 0.3rem 0.6rem; margin-right: 0.5rem;">HTML</span>
-      <span style="border: 1px solid #ccc; padding: 0.3rem 0.6rem; margin-right: 0.5rem;">Bootstrap</span>
-      <span style="border: 1px solid #ccc; padding: 0.3rem 0.6rem;">Ruby on rails</span>
-    </div>
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-      <img src="Screenshot 2025-04-22 044923.jpg" alt="project" style="max-width: 45%; border-radius: 5px;">
-      <div style="flex: 1; color: #3c4d6b; line-height: 1.6;">
-        <p>Lorem Ipsum is simply dummy text of the printing and<br>
-          typesetting industry. Lorem Ipsum has been the<br>
-          industry's standard dummy text ever since the 1500s,<br>
-          when an unknown printer took a galley of type and scrambled it 1960s.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and <br>
-          typesetting industry. Lorem Ipsum has been the<br>
-           industry's standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and <br>
-            scrambled it 1960s with the releax map lapora verita.</p>
-        <div style="margin-top: 1rem;">
-          <a href="#" style="background: #f65006; color: white; padding: 0.5rem 1rem; text-decoration: none; margin-right: 0.5rem;">See live 🔗</a>
-          <a href="#" style="background: #f65006; color: white; padding: 0.5rem 1rem; text-decoration: none;">See source 🐙</a>
-        </div>
-      </div>
+  <!-- Project Info Modal -->
+<div style="
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+background-color: white;
+padding: 2rem;
+border-radius: 10px;
+max-width: 80%;
+margin: 2rem auto;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+font-family: 'Roboto', sans-serif;
+color: #1b2c53;
+position: relative;
+">
+<!-- Close Button -->
+<button style="
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+">&times;</button>
+
+<!-- Title -->
+<h2 style="font-size: 1.8rem; font-weight: 700;">Keeping track of hundreds of components website</h2>
+
+<!-- Tags -->
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+  <span style="border: 1px solid #ccc; padding: 0.4rem 0.8rem; border-radius: 4px;">HTML</span>
+  <span style="border: 1px solid #ccc; padding: 0.4rem 0.8rem; border-radius: 4px;">Bootstrap</span>
+  <span style="border: 1px solid #ccc; padding: 0.4rem 0.8rem; border-radius: 4px;">Ruby on Rails</span>
+</div>
+
+<!-- Content Flex Container -->
+<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+  <!-- Image -->
+  <img src="popup.jpg" alt="project" style="flex: 1 1 300px; max-width: 100%; border-radius: 8px;">
+
+  <!-- Description -->
+  <div style="flex: 2 1 400px; display: flex; flex-direction: column; gap: 1rem; color: #3c4d6b; font-size: 0.95rem; line-height: 1.6;">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it.
+    </p>
+    <p>
+      It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+    </p>
+
+    <!-- Action Buttons -->
+    <div style="display: flex; gap: 1rem;">
+      <a href="#" style="
+        background-color: #f65006;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.95rem;
+      ">See Live</a>
+      <a href="#" style="
+        background-color: #f65006;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.95rem;
+      ">See Source</a>
     </div>
   </div>
+</div>
+</div>
+
   <!-- Button States Showcase -->
-  <div style="background: white; padding: 4rem 2rem; text-align: center; font-family: sans-serif;">
+  <div style="background: rgba(255, 255, 255, 0.578); padding: 4rem 2rem; text-align: center; font-family: sans-serif;">
     <div style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 2rem;">
       <div>Enabled</div>
       <div>Hover</div>
       <div>Pressed</div>
       <div>Disabled</div>
     </div>
-    <div style="display: flex; justify-content: center; gap: 3rem;">
+    <div style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 2rem;">
       <button style="background: #f65006; color: white; padding: 1rem 2rem; border: none; font-weight: bold;">Button</button>
       <button style="background: white; color: #f65006; padding: 1rem 2rem; border: 2px solid #f65006; font-weight: bold;">Button</button>
       <button style="background: #d34400; color: white; padding: 1rem 2rem; border: none; font-weight: bold;">Button</button>
@@ -488,4 +539,5 @@
   </div>
   
 </body>
+
 </html>
